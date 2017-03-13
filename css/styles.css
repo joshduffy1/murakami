@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background: radial-gradient(#8b0000, black, black);
+}
+/* try to figure out radial gradient here... update: I got it! */
+header {
+    background-image: linear-gradient(to right, #3E1305, #353635);
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header h1 {
+   
+    color: white; 
+    font-weight: 330;
+    font-size: 330%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+header p {
+    color: #becbd6;
+ 
+}
+
+.container {
+    font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    footer {
+         height: 5%;
+         width: 100%; 
+         color: #353635;
+    }
+    header {
+        color: #333;
+        background-image: url(../img/murakami_face2.jpg);
+        background-size: cover;
+        background-position: 10% 60%;
+        padding-top: 150px;
+    }
+
+    header h1 {
+        font-size: 400%;
+        font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    header p {
+        font-size: 170%;
+        width: 40%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex-basis: 50%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+/* right now, I am happy with how the site looks at medium and bigger screen sizes, so I have nothing in the code below, but in case I want to add things in the future I am including these selectors: */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+
+    .col {
+        flex-basis: 33.333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.mdl-layout {
+    background-size: cover;
+    background-position: center;
+}
+.mdl-grid {
+    height: 50%;
+    width: 99%;
+    margin: auto;
+}
+.mdl-cell .mdl-card {
+    width: 100%;
+    height: 100%;
+    background-color: #778899; 
+    margin: auto;
+    /* border: 1px solid black */
+}
+
+.mdl-cell .mdl-card a {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: black;
+}
+.mdl-card__media img {
+    width: 100%;
+}
+
+footer {
+     background-color: #778899;
+     color: #FFF;
+     padding-top: 1em;
+     padding-bottom: 1em;
+ }
+ footer a {
+     color: white;
+ }
